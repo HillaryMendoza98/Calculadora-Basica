@@ -1,0 +1,38 @@
+
+def calculadora():
+    
+    num1 = float(input("Ingrese el primer número: "))
+    
+    # Solicita al usuario que ingrese el tipo de operación (+, -, *, /)
+
+    operacion = input("Ingrese la operación (+, -, *, /): ")
+    
+    # Solicita el segundo número al usuario y lo convierte a float
+
+    num2 = float(input("Ingrese el segundo número: "))
+
+    # Verifica la operación ingresada por el usuario 
+
+    if operacion == "+":
+        # Suma los dos números si la operación es suma
+        resultado = num1 + num2
+    elif operacion == "-":
+        # Resta los dos números si la operación es resta
+        resultado = num1 - num2
+    elif operacion == "*":
+        # Multiplica los dos números si la operación es multiplicación
+        resultado = num1 * num2
+    elif operacion == "/":
+        # Divide los dos números si la operación es división
+        
+        resultado = num1 / num2
+    else:
+        # Si la operación no es válida, muestra un mensaje de error
+        print("Operación inválida")
+        return  # Termina la función si la operación es inválida
+
+    # Imprime el resultado de la operación
+    print("Resultado:", resultado)
+
+# Llama a la función calculadora para ejecutarla
+calculadora()
